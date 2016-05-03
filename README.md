@@ -12,6 +12,8 @@ var val = mShape(85, [0,40,60,80,90,100])
 console.log(val) // 75
 ```
 
+![Chart](chart.png)
+
 ## function: mShape
 `mShape(value, shape, [scale])`
 
