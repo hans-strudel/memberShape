@@ -1,0 +1,30 @@
+{
+  "name": "membershape",
+  "version": "1.0.0",
+  "description": "n-shaped membership function",
+  "main": "ms.js",
+  "scripts": {
+    "test": "mShape(5, [0,2,3,5])"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hans-strudel/memberShape.git"
+  },
+  "keywords": [
+    "math",
+    "key",
+    "member",
+    "shape",
+    "fuzzy",
+    "match",
+    "geometry",
+    "algebra",
+    "number"
+  ],
+  "author": "hans-strudel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hans-strudel/memberShape/issues"
+  },
+  "homepage": "https://github.com/hans-strudel/memberShape#readme"
+}
