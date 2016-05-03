@@ -1,0 +1,40 @@
+{
+  "name": "membershape",
+  "version": "1.0.1",
+  "description": "JS module for n-shaped membership function (fuzzy)",
+  "main": "ms.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hans-strudel/memberShape.git"
+  },
+  "keywords": [
+    "algebra",
+    "fuzzy",
+    "hard",
+    "math",
+    "node",
+    "js",
+    "test",
+    "help",
+    "trig",
+    "geometry",
+    "fuzz",
+    "search",
+    "tree",
+    "machine",
+    "learning",
+    "new",
+    "old"
+  ],
+  "author": "hans-strudel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hans-strudel/memberShape/issues"
+  },
+  "homepage": "https://github.com/hans-strudel/memberShape#readme"
+}
