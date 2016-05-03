@@ -1,11 +1,15 @@
-exports.mShape = function(n, shape, scale){ // n should be int, shape should be Array
-	scale = scale || 100
+exports.mShape = function(n, shape, scale){ // n should be int, shape should be Array, scale is optional
+	if (typeof n === 'string') n = parseInt(n)
+	if (typeof n === 'undefined') throw new Error('value not provided')
+	if (typeof shape === 'undefined') throw new Error('Shape not defined')
+		
+	var scale = scale || 100
 	
 	var fin = 0,
-	lmid = Math.floor((shape.length-1)/2),
-	hmid = Math.ceil((shape.length-1)/2),
-	min = Math.min.apply(null, shape),
-	max = Math.max.apply(null, shape)
+		lmid = Math.floor((shape.length-1)/2),
+		hmid = Math.ceil((shape.length-1)/2),
+		min = Math.min.apply(null, shape),
+		max = Math.max.apply(null, shape)
 	
 	if (n <= min || n >= max){
 		// too small or large
@@ -35,7 +39,7 @@ exports.mShape = function(n, shape, scale){ // n should be int, shape should be 
 		lb = point // lowbound
 		return true
 	})
-	val = step / (hb - lb) * (n - lb) + p * step
-	if (side) val = -step / (hb - lb) * (n - lb) + (shape.length-p-1) * step
+	var val = step / (hb - lb) * (n - lb) + p * step
+	if (side) var val = -step / (hb - lb) * (n - lb) + (shape.length-p-1) * step
 	return val
 }
