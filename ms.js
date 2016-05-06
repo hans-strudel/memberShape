@@ -46,7 +46,3 @@ exports.mShape = function(n, shape, scale){ // n should be int, shape should be 
 		
 	return val
 }
-
-for (var i=0;i<=4;i+=0.5){
-	console.log(exports.mShape(i, [0,4,8,10], 100, 2))
-}
